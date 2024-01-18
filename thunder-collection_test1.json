@@ -1,0 +1,113 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "test1",
+    "dateExported": "2024-01-17T13:22:11.354Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f6e491d3-8245-418b-8115-02cc27429bc0",
+            "colId": "f7e97501-1bc6-4f86-ae8a-49d39b6aea99",
+            "containerId": "",
+            "name": "register a user",
+            "url": "http://localhost:4000/api/auth/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-17T13:15:04.372Z",
+            "modified": "2024-01-17T13:15:50.879Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"ram\",\n  \"email\":\"ram@gmail.com\",\n  \"password\":\"Ram@12345678\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5e914e07-09b7-4e78-922f-5ce30936c5ba",
+            "colId": "f7e97501-1bc6-4f86-ae8a-49d39b6aea99",
+            "containerId": "",
+            "name": "login a user",
+            "url": "http://localhost:4000/api/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-17T13:16:05.276Z",
+            "modified": "2024-01-17T13:16:41.590Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"ram@gmail.com\",\n  \"password\":\"Ram@12345678\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "649171e1-5455-4fdc-942f-eb2e340ed106",
+            "colId": "f7e97501-1bc6-4f86-ae8a-49d39b6aea99",
+            "containerId": "",
+            "name": "admin create a user",
+            "url": "http://localhost:4000/api/user/create/65a76debd06a33561b56f732",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-01-17T13:17:12.395Z",
+            "modified": "2024-01-17T13:18:40.259Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"Manan\",\n  \"email\":\"mananloshali@gmail.com\",\n  \"password\":\"Manan!123\",\n  \"joiningDate\":\"17/01/2024\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1960d35b-cc83-4f03-99ec-ddb9bfc1c73a",
+            "colId": "f7e97501-1bc6-4f86-ae8a-49d39b6aea99",
+            "containerId": "",
+            "name": "update password",
+            "url": "http://localhost:4000/api/user/update_password/65a77ca1cdb4746773b62c2f",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-01-17T13:19:07.068Z",
+            "modified": "2024-01-17T13:19:26.496Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\":\"Manan@45454\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1718fc7c-42f1-4018-90e0-b388f29139b9",
+            "colId": "f7e97501-1bc6-4f86-ae8a-49d39b6aea99",
+            "containerId": "",
+            "name": "get all user",
+            "url": "http://localhost:4000/api/user/all/65a77973f839fd996f740c94",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-01-17T13:19:58.731Z",
+            "modified": "2024-01-17T13:20:33.024Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3aaf9246-a145-4baa-ae76-806994f2c660",
+            "colId": "f7e97501-1bc6-4f86-ae8a-49d39b6aea99",
+            "containerId": "",
+            "name": "get a user",
+            "url": "http://localhost:4000/api/user/get_user/65a77973f839fd996f740c94",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-01-17T13:20:50.525Z",
+            "modified": "2024-01-17T13:21:36.107Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

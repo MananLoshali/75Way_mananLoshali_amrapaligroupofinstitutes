@@ -18,13 +18,13 @@ router.put("/update_password/:id",updatePassword);
 //get all user
 router.get("/all/:id",verifyTokenAndAdmin,getAllUser);
 
-//set in and out time
-router.put("/set_time/:id",verifyTokenAndAutherization,setuserTime);
-
 //get a user
 router.get("/get_user/:id",verifyTokenAndAutherization,getUserInfo);
 
-//update a user info
+//set in and out time only by a user
+router.put("/set_time/:id",verifyTokenAndAutherization,setuserTime);
+
+//update a user info only by admin
 router.put("/update_user_info/:id",verifyTokenAndAdmin,updateUserInfo);
 
 export default router;

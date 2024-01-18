@@ -25,8 +25,8 @@ export const setuserTime = async (req: Request, res: Response) => {
                     duration: shortLeave
                 }
             }
-           
         })
+        
         sendMail(req, res, "updateTime", updateUser);
 
         res.status(200).json({ msg: "User updated successfully" });

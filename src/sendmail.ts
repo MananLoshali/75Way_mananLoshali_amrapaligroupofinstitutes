@@ -8,7 +8,7 @@ export const sendMail = async (req: any, res: any, type: string, savedUser: any)
         service:"gmail",
         auth: {
             user: 'manan.75way@gmail.com',
-            pass: 'manan75WT356'
+            pass: 'hmqwstgnzerjqzrr'
         }
     })
 
@@ -90,7 +90,7 @@ export const sendMailToUser = async (user: any, type: string) => {
         service:"gmail",
         auth: {
             user: 'manan.75way@gmail.com',
-            pass: 'manan75WT356'
+            pass: 'hmqwstgnzerjqzrr'
         }
     })
 
