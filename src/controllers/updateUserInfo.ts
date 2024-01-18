@@ -3,14 +3,14 @@ import { user } from "../models/user";
 
 export const updateUserInfo = async (req: Request, res: Response) => {
 
-    const  {userId,inTime,outTime,onLeave,date}  = req.body;
+    const  {userId,inTime,outTime,onLeave,date,birthday}  = req.body;
     
     try {
         if(!userId){
             res.status(404).json({msg:"User Id is required"});
         }
         //fetching user based on their id and cupdating them
-        const updateUser = await user.findByIdAndUpdate(req.params.id, {
+        const updateUser = await user.findByIdAndUpdate(userId, {
             $set:{
                 inTime: {
                     day: date,
@@ -22,7 +22,8 @@ export const updateUserInfo = async (req: Request, res: Response) => {
                 },
                 onLeave:{
                     leavesDate:onLeave
-                }
+                },
+                birthday:birthday
             }
             
         })

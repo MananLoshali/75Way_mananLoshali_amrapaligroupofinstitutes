@@ -25,10 +25,16 @@ const mongo_uri: any = process.env.MONGO_DB_URI;
 connectToDb(mongo_uri);
 
 
-//schedule the job after every day
+
+
+// schedule the job after every day
 cron.schedule('00 12 * * *', () => {
     findUser();
 })
+
+// cron.schedule('* * * * *', () => {
+//     findUser();
+// })
 
 //auth route
 app.use("/api/auth", authRoute)
